@@ -115,6 +115,15 @@ define Build/zytrx-header
 	mv $@.new $@
 endef
 
+define Device/qm_b1
+IMAGE_SIZE := 16064k
+DEVICE_VENDOR := QM
+DEVICE_MODEL := B1
+DEVICE_PACKAGES := kmod-sdhci-mt7620 kmod-mt76x2 kmod-usb3 kmod-tun \
+	kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport wpad-openssl
+endef
+TARGET_DEVICES += qm_b1
+
 define Device/dsa-migration
   DEVICE_COMPAT_VERSION := 1.1
   DEVICE_COMPAT_MESSAGE := Config cannot be migrated from swconfig to DSA
