@@ -12,10 +12,10 @@ asus,rt-n56u-b1)
 	ucidef_set_led_netdev "wan" "WAN link" "blue:wan" "wan"
 	;;
 qm,b1)
-        ucidef_set_led_netdev "wan" "WAN" "$boardname:green:wan" "WAN"
-        ucidef_set_led_netdev "wifi2g" "Wifi 2.4G" "$boardname:green:wifi2G" "wlan0"
-        ucidef_set_led_netdev "wifi5g" "Wifi 5G" "$boardname:green:wifi5G" "wlan1"
-        ;;
+        ucidef_set_led_netdev "wifi5g" "Wifi5g" "green:wifi5g" "wlan0"
+        ucidef_set_led_netdev "wifi2g" "Wifi2g" "green:wifi2g" "wlan1"
+	ucidef_set_led_netdev "wwan0" "wwan0" "green:wwan0" "wwan0"
+        ;;
 cudy,wr2100)
 	ucidef_set_led_netdev "lan1" "lan1" "green:lan1" "lan1"
 	ucidef_set_led_netdev "lan2" "lan2" "green:lan2" "lan2"
