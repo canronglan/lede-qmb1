@@ -1,5 +1,5 @@
 # 欢迎来到 Lean 的 Openwrt 源码仓库
-
+适配QM B1的仓库 https://github.com/monw/lede
 如何编译自己需要的 OpenWrt 固件 [English](./README_EN.md)
 
 ## 注意
