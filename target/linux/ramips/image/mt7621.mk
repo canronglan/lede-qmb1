@@ -119,7 +119,7 @@ define Device/qm_b1
 IMAGE_SIZE := 16064k
 DEVICE_VENDOR := QM
 DEVICE_MODEL := B1
-DEVICE_PACKAGES := kmod-sdhci-mt7620 kmod-mt76x2 kmod-usb3 kmod-tun \
+DEVICE_PACKAGES := kmod-sdhci-mt7620 kmod-mt76x2e kmod-usb3 kmod-tun \
 	kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport wpad-openssl
 endef
 TARGET_DEVICES += qm_b1
